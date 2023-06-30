@@ -1,24 +1,40 @@
-// let entrada = prompt("Ingrese un dato");
+// Obtener los datos del usuario
+let estrato = parseInt(prompt("Ingrese su estrato:\n\n- 1\n- 2\n- 3"));
+let tieneTarjetaPremium = prompt("¿Tiene tarjeta Premium? (Sí/No)").toLowerCase() === "si" || "sí";
 
-// while (entrada != "ESC"){
-//     alert("El usuario ingreso " + entrada);
-//     entrada = prompt("Ingrese un dato");
+// Definir las tarifas y descuentos
+let tarifaBase = 100;
+let descuentoEstrato = 0;
+let descuentoPremium = 0;
 
-// }
+// Definir la lista de estratos y sus descuentos correspondientes
+let listaEstratos = [
+  { estrato: 1, descuento: 30 },
+  { estrato: 2, descuento: 15 },
+  { estrato: 3, descuento: 8 }
+];
 
-// let numero = 0;
+// Buscar el descuento por estrato en la lista
+let i = 0;
+while (i < listaEstratos.length && listaEstratos[i].estrato !== estrato) {
+  i++;
+}
 
-// do{
-//     numero = prompt("Ingresar Numero");
-//     console.log(numero);
-// }while(parseInt(numero));
+// Si se encontró el descuento correspondiente al estrato, asignarlo
+if (i < listaEstratos.length) {
+  descuentoEstrato = listaEstratos[i].descuento;
+}
 
-// CONTADOR DE OVEJAS CON WHILE
+// Calcular el descuento por tarjeta Premium
+if (tieneTarjetaPremium) {
+  descuentoPremium = 15;
+}
 
-// let i = 0;
+// Calcular la tarifa final
+let tarifaFinal = tarifaBase - descuentoEstrato - descuentoPremium;
 
-// while (i < 11){
-//     document.write("Tengo " + i + " oveja <br>")
-//     i += 1
-// }
-
+// Mostrar el resultado al usuario utilizando alert
+alert("Tarifa Base: $" + tarifaBase + "\n" +
+      "Descuento por estrato: $" + descuentoEstrato + "\n" +
+      "Descuento por tarjeta Premium: $" + descuentoPremium + "\n" +
+      "Tarifa Final: $" + tarifaFinal);
