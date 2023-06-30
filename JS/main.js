@@ -1,8 +1,8 @@
-// Obtener los datos del usuario
+// Datos del usuario
 let estrato = parseInt(prompt("Ingrese su estrato:\n\n- 1\n- 2\n- 3"));
 let tieneTarjetaPremium = prompt("¿Tiene tarjeta Premium? (Sí/No)").toLowerCase() === "si" || "sí";
 
-// Definir las tarifas y descuentos
+// Tarifas y descuentos
 let tarifaBase = 100;
 let descuentoEstrato = 0;
 let descuentoPremium = 0;
@@ -33,7 +33,7 @@ if (tieneTarjetaPremium) {
 // Calcular la tarifa final
 let tarifaFinal = tarifaBase - descuentoEstrato - descuentoPremium;
 
-// Mostrar el resultado al usuario utilizando alert
+// Rsultado de costo de la tarifa con descuentos incluidos segun el caso
 alert("Tarifa Base: $" + tarifaBase + "\n" +
       "Descuento por estrato: $" + descuentoEstrato + "\n" +
       "Descuento por tarjeta Premium: $" + descuentoPremium + "\n" +
