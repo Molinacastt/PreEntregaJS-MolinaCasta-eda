@@ -1,48 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: rgb(243, 225, 201);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-p {
-    color: rgb(255, 255, 255);
-    font-family: 'Pacifico', cursive;
-    font-family: 'Ysabeau', sans-serif;
-}
-
-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(183, 138, 138);
-    border-radius: 20px;
-    padding: 10px;
-    height: 50px;
-    width: 450px;
-    font-size: 20px;
-    font-weight: 600;
-    box-shadow: 7px 7px 4px 0;
-}
-
-div:hover {
-    transform:scale(1.2);
-    transition: 1s;
-    background-color: rgb(255, 255, 255);
-    color: rgb(183, 138, 138);
-}
-
-p:hover {
-    color: rgb(0, 0, 0);
-}
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #333;
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  
+  #contador {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    margin: 20px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #004080;
+  }
