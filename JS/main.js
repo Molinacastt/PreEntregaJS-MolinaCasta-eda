@@ -9,7 +9,6 @@ addToCartButtons.forEach(button => {
         cartItem.innerHTML = `${productName} <button class="remove-from-cart">Eliminar</button>`;
         cartItemsList.appendChild(cartItem);
 
-        // Agregar evento para eliminar un producto del carrito
         const removeButton = cartItem.querySelector('.remove-from-cart');
         removeButton.addEventListener('click', () => {
             cartItemsList.removeChild(cartItem);
