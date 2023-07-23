@@ -1,16 +1,18 @@
-var contadorElemento = document.getElementById("contador");
-var contador = 0;
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const cartItemsList = document.querySelector('.cart-items');
 
-function incrementarContador() {
-  contador++;
-  actualizarContador();
-}
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const productName = button.parentNode.querySelector('span').innerText;
+        const cartItem = document.createElement('li');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `${productName} <button class="remove-from-cart">Eliminar</button>`;
+        cartItemsList.appendChild(cartItem);
 
-function decrementarContador() {
-  contador--;
-  actualizarContador();
-}
-
-function actualizarContador() {
-  contadorElemento.innerText = contador;
-}
+        // Agregar evento para eliminar un producto del carrito
+        const removeButton = cartItem.querySelector('.remove-from-cart');
+        removeButton.addEventListener('click', () => {
+            cartItemsList.removeChild(cartItem);
+        });
+    });
+});

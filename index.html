@@ -3,16 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Segunda Pre-entrega</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
   </head>
 
   <body>
-    <h1>Contador</h1>
-    <p id="contador">0</p>
-
-    <button onclick="incrementarContador()">Incrementar</button>
-    <button onclick="decrementarContador()">Decrementar</button>
+    <h1>Carrito de Compras</h1>
+    <div class="products">
+      <div class="product">
+        <span>Manzanas</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <span>Peras</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <span>Uvas</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <span>Bananos</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <span>Durazno</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <!-- Agrega los demás productos aquí -->
+    </div>
+    <div class="cart">
+      <h2>Carrito</h2>
+      <ul class="cart-items">
+        <!-- Los productos seleccionados se agregarán aquí -->
+      </ul>
+    </div>
 
     <script src="JS/main.js"></script>
   </body>
