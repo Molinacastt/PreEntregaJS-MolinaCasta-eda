@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #353534;
+    background-color: #fffffd;
 }
 
 h1 {
     text-align: center;
-    color: rgb(255, 255, 255);   
+    color: rgb(0, 0, 0);   
 }
 
 .products {
@@ -17,19 +17,21 @@ h1 {
 
 .product {
     font-weight: 700;
-    background-color: antiquewhite;
-    border: 2px solid #ccc;
+    background-color: rgb(57, 56, 55);
+    border: 2px solid #060606;
     border-radius: 10px;
     border-color: black;
     padding: 10px;
     margin: 10px;
     width: 200px;
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .cart {
     margin-top: 30px;
-    color: white;
+    color: rgb(5, 5, 5);
+    font-weight: 700;
 }
 
 .cart h2 {
@@ -49,8 +51,8 @@ h1 {
 
 .add-to-cart {
     border-radius: 3px;
-    background-color: #222522;
-    color: white;
+    background-color: #a2a0a0;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 5px 10px;
     text-align: center;
